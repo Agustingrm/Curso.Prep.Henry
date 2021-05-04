@@ -10,6 +10,19 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var array = [];
+  var array2 = [];
+
+  for (var propertyName in objeto){
+    array.push(propertyName)
+}
+  for (i=0;i<array.length;i++){
+    let array3 = []
+    array3.push(array[i]);
+    array3.push(objeto[array[i]]);
+    array2.push(array3);
+  }
+  return array2;
 }
 
 
@@ -83,4 +96,3 @@ module.exports = {
    sortArray,
    buscoInterseccion,
 };
-
